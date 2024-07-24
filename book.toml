@@ -1,6 +1,6 @@
 [book]
-authors = ["Joao Pedro de Lacerda"]
-language = "en"
+authors = ["João Pedro de Lacerda"]
+language = "pt-BR"
 multilingual = false
 src = "src"
-title = "Workshop - Da ideia à ação"
+title = "Workshop GHA - Da ideia à ação"
