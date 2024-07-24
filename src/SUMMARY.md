@@ -9,7 +9,7 @@
   - [CD](./cicd/cd.md)
 - [Github Actions](./gha/README.md)
   - [Workflows](./gha/workflows.md)
-  - [Runners](./gha/runners.md)
+  - [Executores](./gha/runners.md)
   - [Gatilhos](./gha/triggers.md)
   - [Variáveis de ambiente](./gha/envs-vars.md)
   - [Saídas (outputs) e dependências](./gha/outputs-and-deps.md)
