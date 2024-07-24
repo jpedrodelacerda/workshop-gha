@@ -89,4 +89,4 @@ Para mergear, vamos utilizar o método do `squash and merge`, recomendado pelo [
 
 Pronto! Agora que nosso workflow rodou, foi criado um novo PR de release. É só mergearmos e correr pro abraço!
 
-Se tudo der certo, você é a pessoa mais recente a publicar um novo pacote no NPM! Parabéns!!
+Se tudo der certo, você acaba de publicar um novo pacote no NPM! Parabéns!!

@@ -21,7 +21,7 @@ on:
 
 Isso é suficiente? Sim, mas podemos ser ainda mais específicos.
 
-Faz sentido executar testes em PRs que alteram apenas arquivos de documentação? Se eu fiz uma alteração no `README.md` tem motivo executarmos testes. Especificamos isso utilizando `paths`.
+Faz sentido executar testes em PRs que alteram apenas arquivos de documentação? Se eu fiz uma alteração no `README.md`, tem motivo executarmos testes. Especificamos isso utilizando `paths`.
 
 ```yaml
 name: PR Checker
@@ -164,7 +164,7 @@ Você já reparou que em alguns projetos estão disponíveis várias versões de
 Imagina ter que repetir o tamanho do workflow pra dar suporte pra isso!!
 
 
-Mas calma, será que o tem essa duplicação realmente? Existe alguma solução para permitir suporte para todas as combinações de forma simples?
+Mas calma, será que realmente precisamos fazer essa duplicação? Existe alguma solução para permitir suporte para todas as combinações de forma simples?
 
 Se nossa biblioteca tivesse suporte para outras versões do Node e outros sistemas, poderíamos executar a nossa ação em cada uma das versões através das matrizes.
 

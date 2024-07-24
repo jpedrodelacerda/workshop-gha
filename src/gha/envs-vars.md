@@ -17,7 +17,7 @@ Podemos definir uma variável em 3 níveis:
 - job
 - etapa
 
-Para definir uma variável, basta definirmos um mapa `env`. Todos os elementos a abaixo daquele escopo terão acesso à variável. Por esse motivo, é bom seguirmos uma das regras de ouro da segurança: quanto menor o escopo, melhor.
+Para definir uma variável, basta definirmos um mapa `env`. Todos os elementos abaixo daquele escopo terão acesso à variável. Por esse motivo, é bom seguirmos uma das regras de ouro da segurança: quanto menor o escopo, melhor.
 
 ## Exemplos
 

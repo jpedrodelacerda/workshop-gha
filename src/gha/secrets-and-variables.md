@@ -1,6 +1,6 @@
 # Segredos e variáveis
 
-Um dos primeiros conceitos que encontramos ao iniciar no mundo da programação é o uso de variáveis. Isso se deve ao fato de que às vezes o nosso código precisa receber alguma entrada do usuário ou até mesmo facilitar a manutenção do mesmo.
+Um dos primeiros conceitos que encontramos ao iniciar no mundo da programação é o uso de variáveis. Isso se deve ao fato de que às vezes o nosso código precisa receber alguma entrada do usuário, além de facilitar a manutenção e leitura do código.
 
 Com os workflows não é diferente. Para isso, existem os `secrets` e as `variables`.
 
@@ -27,7 +27,7 @@ Para a criação, basta ir na configuração do nível desejado:
 
 ## Utilização
 
-Os secredos e variáveis estão disponíveis através do objeto `secrets` e `vars`, respectivamente. Ou seja, para acessar o valor do secret `SECRET_SECRETO_DO_JP`, basta expandirmos o valor via `${{ secrets.SECRET_SECRETO_DO_JP }}`.
+Os segredos e variáveis estão disponíveis através do objeto `secrets` e `vars`, respectivamente. Ou seja, para acessar o valor do secret `SECRET_SECRETO_DO_JP`, basta expandirmos o valor via `${{ secrets.SECRET_SECRETO_DO_JP }}`.
 
 ## Exemplos
 

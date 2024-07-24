@@ -3,7 +3,7 @@
 Às vezes precisamos passar informações de uma etapa para outra e até de um job para outro. Para resolver esse problema, podemos utilizar as saídas (outputs).
 
 É importante notar que os outputs são apenas strings e ficam armazenados em um arquivo de saída do workflow.
-O caminho deste arquivo está disponível através da variável `GITHUB_OUTPUT` e este arquivo é compartilhado por todos os etapas de um job.
+O caminho deste arquivo está disponível através da variável `GITHUB_OUTPUT` e este arquivo é compartilhado por todas as etapas de um job.
 
 Para definir uma saída de um job, basta usar o atributo `outputs`. Para acessar, utilizamos o `steps.<nome da etapa>.outputs.<nome da saída>` ou `needs.<nome do job>.outputs.<nome da saída>`.
 

@@ -9,7 +9,7 @@ Existem diversos métodos para acionarmos os workflows, mas os principais são:
 - `schedule`: acionado em um determinado padrão de horário.
 - `push`: acionado sempre que acontecer um **push**.
   > Se quiser ignorar algum gatilho via push/pr, basta utilizar um `[skip ci]` na mensagem de um commit.
-- `pull_request`: acionado sempre que um   Podemos especificar coisas como:
+- `pull_request`: acionado sempre que um **pull request** for criado, fechado, etc. Podemos especificar coisas como:
   - `branches`/`branches-ignore`: acionar apenas quando acontecer em uma determinada branch ou evitar a execução nela. No caso dos pull requests é verificada a branch alvo do PR.
   - `paths`/`paths-ignore`: acionar apenas quando acontecer alteração em um caminho ou ignorar se algum arquivo for alterado. Um bom uso para ignorar caminhos é evitar deploys de arquivos que não são parte do código fonte, por exemplo, o `README.md` de um projeto.
 

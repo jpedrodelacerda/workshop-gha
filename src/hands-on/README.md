@@ -15,11 +15,11 @@ Beleza. Tudo lindo, tudo bacana. Mas vamos pra prática?
 
 ## Agenda
 
-Nessa etapa do workshop vamos criar workflows para resolver dois pontos importantíssimos da etapa de desenvolvimento:
+Nessa etapa do workshop, vamos criar workflows para resolver dois pontos importantíssimos da etapa de desenvolvimento:
 - análise de PRs
 - criação de release
 
-Na etapa de análise de PR estamos interessados em verificar se os testes estão passando. Você pode (e deve) ser mais criterioso do que o nosso exemplo. Lembre-se que contexto é tudo!
+Na etapa de análise de PR, estamos interessados em verificar se os testes estão passando. Você pode (e deve) ser mais criterioso do que o nosso exemplo. Lembre-se que contexto é tudo!
 
 Já na criação da release, vamos assumir um mundo perfeito: toda alteração que chega na branch é uma release nova, afinal tudo passou pelo crivo das nossas análises dos PRs.
 

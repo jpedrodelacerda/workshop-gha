@@ -1,7 +1,7 @@
 # Publicando uma release
 
 Como estamos trabalhando com uma biblioteca, a publicação da release vai ser no `npm`. Para isso, basta ter uma conta registrada no site.
-Queremos também gerar um texto contendo as mudanças que ocorreram deste a última release.
+Queremos também gerar um texto contendo as mudanças que ocorreram desde a última release.
 
 > Nesta etapa não nos preocuparemos com teste. Assumimos no nosso mundo ideal lindo e maravilhoso que toda alteração já passou previamente pelo teste na etapa de PR. Caso seja do seu interesse, você pode definir os jobs que utilizamos na etapa anterior para executar testes antes da publicação.
 
@@ -37,18 +37,18 @@ Em resumo, nossas mensagens terão o seguinte formato:
 <tipo>[escopo opcional]: <descrição>
 ```
 
-Caso a tenha uma quebra de compatibilidade, podemos indicar isso para o sistema utilizando um ponto de exclamação: `<tipo>!: <descrição>`. Isso fará com que a major version seja atualizada.
+Caso tenha uma quebra de compatibilidade, podemos indicar isso para o sistema utilizando um ponto de exclamação: `<tipo>!: <descrição>`. Isso fará com que a major version seja atualizada.
 
 Escolhemos o conventional commits pois utilizaremos a action [`googleapis/release-please`](https://github.com/googleapis/release-please-action).
 
 Eu falei que tudo que chegasse na `main` seria uma release, né? Mas não vai ser chegou e publicou. O processo vai ser com as seguintes etapas:
-1. Criação de PR apontando para `main`
+1. criação de PR apontando para `main`
    Desenvolveremos nossa feature em uma branch de vida curta. Assim que finalizarmos o desenvolvimento dela, abriremos um PR para a branch principal.
-2. Merge na `main`
+2. merge na `main`
    Acionará o workflow da release.
-3. A action irá criar um novo PR da release
+3. a action irá criar um novo PR da release
    Com a execução do workflow da release, um novo PR é criado. Até então nossa release não foi publicada.
-4. Merge do PR da release
+4. merge do PR da release
    Com esse merge, a action criará uma release do Github e executará o resto do nosso workflow, publicando o pacote no NPM.
 
 
@@ -56,7 +56,7 @@ Eu falei que tudo que chegasse na `main` seria uma release, né? Mas não vai se
 
 Antes de começar a fazer nosso workflow de release, vamos preparar o terreno!
 
-Por padrão, o `npm` publica no repositório público. Caso você deseja fazer o deploy para outro repositório, pode configurar isso via `publishConfig` no `package.json`.
+Por padrão, o `npm` publica no repositório público. Caso você deseje fazer o deploy para outro repositório, pode configurar isso via `publishConfig` no `package.json`.
 
 Vamos aproveitar e atualizar algumas informações:
 - `name`: vamos adicionar um [escopo](https://docs.npmjs.com/cli/v10/using-npm/scope)

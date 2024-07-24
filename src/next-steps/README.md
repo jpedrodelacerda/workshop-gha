@@ -1,6 +1,6 @@
 # Próximos passos
 
-Apesar de termos completado a publicação de nossa valiosíssima biblioteca esse não precisa ser o final da sua jornada!
+Apesar de termos completado a publicação de nossa valiosíssima biblioteca, esse não precisa ser o final da sua jornada!
 
 O Github Actions tem uma infinidade tanto de aplicações como suporte. Abaixo vou mostrar (bem superficialmente) algumas.
 

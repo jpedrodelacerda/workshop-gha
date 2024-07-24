@@ -1,14 +1,14 @@
 # Etapas / Steps
 
-Nos capítulos anteriores vimos alguns exemplos de workflows mas passamos batido por um detalhe importante: apesar de sabermos que um job é composto por etapas, o que compõe uma etapa?
+Nos capítulos anteriores vimos alguns exemplos de workflows, mas passamos batido por um detalhe importante: apesar de sabermos que um job é composto por etapas, o que compõe uma etapa?
 
 Podemos definir dois tipos de etapas:
-- Comandos
-- Ações (Actions)
+- comandos
+- ações (actions)
 
 ## Comandos
 
-Podemos indicar a execução de um comando através da palavra chave `run`. Como vimos em alguns exemplos anteriores, ao utilizar o `run`, interagimos diretamente com uma shell e podemos inclusive fazer uma cadeia de comandos.
+Podemos indicar a execução de um comando através da palavra-chave `run`. Como vimos em alguns exemplos anteriores, ao utilizar o `run`, interagimos diretamente com uma shell e podemos inclusive fazer uma cadeia de comandos.
 
 ```yaml
 # ...
@@ -23,7 +23,7 @@ Podemos indicar a execução de um comando através da palavra chave `run`. Como
 
 ### Parâmetros
 
-A melhor maneira de passarmos parâmetros para os comandos através das `envs`.
+A melhor maneira de passarmos parâmetros para os comandos é através das `envs`.
 
 ```yaml
 # ...
@@ -38,11 +38,11 @@ A melhor maneira de passarmos parâmetros para os comandos através das `envs`.
 
 Para tarefas mais complexas, podemos utilizar `actions`. Elas são componentes que permitem a repetição de atividades e reduzem a complexidade do seu workflow.
 
-Para invocarmos uma `action`, utilizamos a palavra chave `uses`.
+Para invocarmos uma `action`, utilizamos a palavra-chave `uses`.
 
 ### Versão
 
-Imagina só esse cenário: na semana passada o seu time gerou uma release utilizando o pipeline. Quando chegou a sua vez de tirar a release você se depara com um erro. O mantenedor de uma das actions que você utiliza aproveitou pra trabalhar nela no tempo livre do fim de semana e acabou subindo uma alteração que quebrou a compatibilidade com o seu workflow.
+Imagina só esse cenário: na semana passada o seu time gerou uma release utilizando o pipeline. Quando chegou a sua vez de tirar a release, você se deparou com um erro. O mantenedor de uma das actions que você utiliza aproveitou pra trabalhar nela no tempo livre do fim de semana e acabou subindo uma alteração que quebrou a compatibilidade com o seu workflow.
 
 > COMO ASSIM????
 
@@ -60,7 +60,7 @@ E se a gente especificar exatamente qual a versão da action estamos interessado
 
 ### Parâmetros
 
-Para passarmos parâmetros para as actions, geralmente utilizamos a palavra chave `with`.
+Para passarmos parâmetros para as actions, geralmente utilizamos a palavra-chave `with`.
 
 ```yaml
 # ...
@@ -90,11 +90,11 @@ Além dessas, há uma infinitude de actions que você pode buscar no [Github Mar
 
 ## Actions extremamente específicas pra caramba
 
-Caso você tenha buscado e não encontrou uma action que resolva o seu problema, não se desespere! Assim como aquela pizza de nutella e abacaxi que a pizzaria se resolveu a fazer pra ti, é sempre possível partirmos para uma solução caseira.
+Caso você tenha buscado e não encontrou uma action que resolva o seu problema, não se desespere! Assim como você não encontrou aquela pizzaria que faria aquela pizza de nutella e abacaxi ou outras combinações altamente questionáveis, é sempre possível partirmos para uma solução caseira.
 
 Existem 3 tipos de actions a serem criadas:
 - container Docker
 - JavaScript
-- Ações compostas
+- ações compostas
 
 Não vamos abordar isso no workshop, mas você sempre pode contar com a [documentação oficial](https://docs.github.com/pt/actions/creating-actions) para aprofundar nos tópicos discutidos aqui!
