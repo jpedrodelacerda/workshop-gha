@@ -24,7 +24,7 @@ jobs:
       - name: Prepare | Install Nix
         uses: cachix/install-nix-action@v27
         with:
-          nixpkgs-=channel:nixos-unstable
+          nix_path: nixpkgs=channel:nixos-unstable
       - name: Prepare | Configure Magic Nix Cache
         uses: DeterminateSystems/magic-nix-cache-action@v7
       - name: Prepare | Setup Pages
